@@ -226,9 +226,9 @@
       
     이와 같은 예제가 있을때, 나는 Student 클래스를 이용해, 정정일이라는 name을 가진 인스턴스를 만들고 싶다면,  
     ```java
-    //		Student jji = new Student();
-    //		jji.name = "정정일"; // The field Student.name is not visible
-    //    이렇게 하면 private로 설정했기 때문에 name 필드로의 접근이 불가능해짐
+    Student jji = new Student();
+    jji.name = "정정일"; // The field Student.name is not visible
+    //이렇게 하면 private로 설정했기 때문에 name 필드로의 접근이 불가능해짐
     
     Student jji = new Student("정정일");
     System.out.println(jji.getName());
